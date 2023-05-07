@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+main{
+    background-color: #1e1e1e;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+.calculator{
+    background: linear-gradient(150.69deg, rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.03) 0%);
+    width: 30rem;
+    background: transparent;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+    border-width:0.05rem 0rem 0rem 0.05rem;
+    border-color: rgba(255, 255, 255, 0.25);
+    border-style: solid;
+    padding:2rem 0rem 2rem 0rem;
+    /* backdrop-filter: blur(20px); */
+    /* -webkit-backdrop-filter: blur(2rem); */
+    z-index: 10;
+    backdrop-filter: blur(2rem);
+    position: relative;
+    overflow: hidden;
+
+}
+
+body:after{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    background-color: aquamarine;
+    top: 52%;
+    left:52%;
+    border-radius: 50%;
+    background: linear-gradient(140.66deg, #1E0FD1 13.87%, #BF24C2 86.88%);
+    transform: rotate(-50.09deg);
+    /* z-index: -1; */
+}
+body:before{
+    content: "";
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    background-color: aquamarine;
+    top: 20%;
+    left:32%;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #E11831 0%, #BF24C2 100%);
+    transform: rotate(-50.09deg);
+    /* z-index: -1; */
+}
+.calculator{
+    position: relative;
+}
+.input-fields{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.input-fields input{
+    border: none;
+    background: none;
+    /* width: 20rem; */
+    color: rgba(255, 255, 255, 0.15);
+    /* font-size: 2.4rem; */
+    /* mix-blend-mode: overlay; */
+    font-weight: 500;
+    padding:0.75rem 2.5rem;
+}
+.input-fields input:nth-child(1){
+    font-size: 3.2rem;
+    text-align: end;
+
+}
+.input-fields input:focus{
+    outline: none;
+    
+}
+
+.btns{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.btns input{
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.15);
+    font-size: 2.4rem;
+    /* mix-blend-mode: overlay; */
+    font-weight: 600;
+    padding:1.2rem 2.4rem
+
+    
+
+}
+.btns input:hover{
+    /* color: rgba(30, 30, 30, 0.314); */
+    /* color: none; */
+
+    /* background-color: rgba(255, 255, 255, 0.163); */
+    box-shadow:inset  0.01rem 0.01rem 2rem 0rem rgba(255, 255, 255, .1);
+}
+.zero{
+    grid-column:span 2;
+}
+.equal{
+    grid-row: span 2;
+}
