@@ -27,7 +27,7 @@ main{
     /* backdrop-filter: blur(20px); */
     /* -webkit-backdrop-filter: blur(2rem); */
     z-index: 10;
-    backdrop-filter: blur(2rem);
+    backdrop-filter: blur(1rem);
     position: relative;
     overflow: hidden;
 
